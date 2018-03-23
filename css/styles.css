@@ -39,6 +39,10 @@ img {
   display: none;
 }
 
+#noCode {
+  color: darkred;
+}
+
 #notComplete {
   color: red;
   text-align: center;
