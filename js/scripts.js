@@ -1,20 +1,20 @@
 $(document).ready(function() {
 
-  $("#portland").click(function(event) {
-    event.preventDefault();
-    $("#location").hide();
-    $(".epicodus").show();
-    $(".portland").show();
-
-  });
-
-  $("#seattle").click(function(event) {
-    event.preventDefault();
-    $("#location").hide();
-    $(".epicodus").show();
-    $(".seattle").show();
-
-  });
+  // $("#portland").click(function(event) {
+  //   event.preventDefault();
+  //   $("#location").hide();
+  //   $(".epicodus").fadeIn(1000);
+  //   $(".portland").fadeIn(1000);
+  //
+  // });
+  //
+  // $("#seattle").click(function(event) {
+  //   event.preventDefault();
+  //   $("#location").hide();
+  //   $(".epicodus").fadeIn(1000);
+  //   $(".seattle").fadeIn(1000);
+  //
+  // });
 
   $("#trackChooser").submit(function(event) {
     event.preventDefault();
