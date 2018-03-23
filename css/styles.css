@@ -8,10 +8,14 @@ body {
 }
 
 img {
-  height: 200px;
-  width: 350px;
-} /*want to align the images side by side but not able to figure out how to have the answer bubble stay on the picture it represents. */
+  height: 300px;
+  width: 450px;
+}
 
 .results {
   display: none;
+}
+
+#notComplete {
+  color: red;
 }

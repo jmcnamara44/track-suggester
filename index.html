@@ -51,37 +51,52 @@
 
         <h4>Which of the options below is most important to you when making a website?</h4>
         <select class="form-control" id="beverage">
-          <option>I want the visitors to my webpage to be in awe of the design and layout of my webpage.</option>
-          <option>I want the visitors to my webpage to be impressed with how my website is able to store information.</option>
-          <option>Both options above are equally important to me.</option>
+          <option value="1"></option>
+          <option value="2">I want visitors to be in awe of the design and layout of my webpage.</option>
+          <option value="3">I want visitors to be impressed with how my website is able to store information.</option>
+          <option value="4">Both options above are equally important to me.</option>
         </select>
 
         <h4>Which image speaks to you?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="picture" value="mountain">
-            <img src="img/mountain.jpg" alt="a picture of a mountain">
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="picture" value="bridge">
-            <img src="img/bridge.jpg" alt="a picture of a bridge">
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="picture" value="field">
-            <img src="img/field.jpg" alt="a picture of a field">
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="picture" value="lake">
-            <img src="img/water.jpg" alt="a picture of a lake">
-          </label>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="radio">
+              <label>
+                <input type="radio" name="picture" value="mountain">
+                <img src="img/mountain.jpg" alt="a picture of a mountain">
+              </label>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="radio">
+              <label>
+                <input type="radio" name="picture" value="bridge">
+                <img src="img/bridge.jpg" alt="a picture of a bridge">
+              </label>
+            </div>
+          </div>
         </div>
 
+        <div class="row">
+          <div class="col-md-6">
+            <div class="radio">
+              <label>
+                <input type="radio" name="picture" value="field">
+                <img src="img/field.jpg" alt="a picture of a field">
+              </label>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="radio">
+              <label>
+                <input type="radio" name="picture" value="lake">
+                <img src="img/water.jpg" alt="a picture of a lake">
+              </label>
+            </div>
+          </div>
+        </div>
         <hr>
 
         <button class="btn btn-primary" type="submit">We recommend you enroll in the...</button>
@@ -90,23 +105,28 @@
 
       <div class ="results" id="ruby">
         <h4>Ruby/Rails Track!</h4>
-        <p>This is a backend programming language and based on your answers we think you would love this track!</p>
+        <p><span class="name"></span>, this is a backend programming language. Based on your answers we think you would love this track!</p>
       </div>
 
       <div class ="results" id="java">
         <h4>Java/Android Track!</h4>
-        <p>This is a backend programming language and based on your answers we think you would love this track!</p>
+        <p><span class="name"></span>, this is a backend programming language. Based on your answers we think you would love this track!</p>
       </div>
 
       <div class ="results" id="css">
         <h4>CSS/React Track!</h4>
-        <p>This is a frontend programming language and based on your answers we think you would love this track!</p>
+        <p><span class="name"></span>, this is a frontend programming language. Based on your answers we think you would love this track!</p>
       </div>
 
       <div class ="results" id="cSharp">
         <h4>C#/.NET Track!</h4>
-        <p>This is a backend programming language and based on your answers we think you would love this track!</p>
+        <p><span class="name"></span>, this is a backend programming language. Based on your answers we think you would love this track!</p>
       </div>
+
+      <div class ="results" id="notComplete">
+        <h4>**YOU MUST ANSWER ALL QUESTIONS BEFORE WE CAN RECOMMEND A TRACK!**</h4>
+      </div>
+
 
     </div>
   </body>
