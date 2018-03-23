@@ -25,124 +25,135 @@
       <div class="epicodus">
 
         <h1>Let us help you decide which Epicodus track to enroll in <span class="portland">Portland, OR</span><span class="seattle">Seattle, WA</span>!</h1>
-
+        <hr>
         <form id="trackChooser">
-          <label for="name"><h4>Please type your name below</h4></label>
-          <input id="name" class="form-control" type="text">
-
-          <h4>Is there a programming language you already know and enjoy working in?</h4>
-          <div class="radio">
-            <label>
-              <input type="radio" name="language" value="cSharp">
-              C#
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="language" value="java">
-              Java
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="language" value="js">
-              Javascript
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="language" value="css">
-              CSS
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="language" value="unlisted">
-              None of the above
-            </label>
+          <div class="well">
+            <label for="name"><h4>Please type your name below</h4></label>
+            <input id="name" class="form-control" type="text">
           </div>
 
-          <h4>Which of the options below is most important to you when making a website?</h4>
-          <select class="form-control" id="layout">
-            <option value="1"></option>
-            <option value="2">I want visitors to be in awe of the design and layout of my webpage.</option>
-            <option value="3">I want visitors to be impressed with how my website is able to store information.</option>
-            <option value="4">Both options above are equally important to me.</option>
-          </select>
-
-
-
-          <h4>Which of the following statements applies to you when you start your job search?</h4>
-          <div class="radio">
-            <label>
-              <input type="radio" name="company" value="bigCompany">
-              I want to work for a big corporation.
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="company" value="startUp">
-              I want to work for a start-up company.
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="company" value="noPreference">
-              I have no preference what sized company I work for.
-            </label>
-          </div>
-
-          <h4>If you could take a high school subject, which would you most enjoy learning about now?</h4>
-          <select class="form-control" id="schoolSubject">
-            <option value="1"></option>
-            <option value="2">Journalism</option>
-            <option value="3">Art</option>
-            <option value="4">Physics</option>
-            <option value="5">Math</option>
-            <option value="6">I hate school and I hate learning!</option>
-          </select>
-
-
-          <h4>Which image speaks to you?</h4>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="radio">
-                <label>
-                  <input type="radio" name="picture" value="mountain">
-                  <img src="img/mountain.jpg" alt="a picture of a mountain">
-                </label>
-              </div>
+          <div class="well">
+            <h4>Is there a programming language you already know and enjoy working in?</h4>
+            <div class="radio">
+              <label>
+                <input type="radio" name="language" value="cSharp">
+                C#
+              </label>
             </div>
-
-            <div class="col-md-6">
-              <div class="radio">
-                <label>
-                  <input type="radio" name="picture" value="bridge">
-                  <img src="img/bridge.jpg" alt="a picture of a bridge">
-                </label>
-              </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="language" value="java">
+                Java
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="language" value="js">
+                Javascript
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="language" value="css">
+                CSS
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="language" value="unlisted">
+                None of the above
+              </label>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-md-6">
-              <div class="radio">
-                <label>
-                  <input type="radio" name="picture" value="field">
-                  <img src="img/field.jpg" alt="a picture of a field">
-                </label>
+          <div class="well">
+            <h4>Which of the options below is most important to you when making a website?</h4>
+            <select class="form-control" id="layout">
+              <option value="1"></option>
+              <option value="2">I want visitors to be in awe of the design and layout of my webpage.</option>
+              <option value="3">I want visitors to be impressed with how my website is able to store information.</option>
+              <option value="4">Both options above are equally important to me.</option>
+            </select>
+          </div>
+
+
+          <div class="well">
+            <h4>Which of the following statements applies to you when you start your job search?</h4>
+            <div class="radio">
+              <label>
+                <input type="radio" name="company" value="bigCompany">
+                I want to work for a big corporation.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="company" value="startUp">
+                I want to work for a start-up company.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="company" value="noPreference">
+                I have no preference what sized company I work for.
+              </label>
+            </div>
+          </div>
+
+          <div class="well">
+            <h4>If you could take a high school subject, which would you most enjoy learning about now?</h4>
+            <select class="form-control" id="schoolSubject">
+              <option value="1"></option>
+              <option value="2">Journalism</option>
+              <option value="3">Art</option>
+              <option value="4">Physics</option>
+              <option value="5">Math</option>
+              <option value="6">I hate school and I hate learning!</option>
+            </select>
+          </div>
+
+          <div class="well">
+            <h4>Which image speaks to you?</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="picture" value="mountain">
+                    <img src="img/mountain.jpg" alt="a picture of a mountain">
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="picture" value="bridge">
+                    <img src="img/bridge.jpg" alt="a picture of a bridge">
+                  </label>
+                </div>
               </div>
             </div>
 
-            <div class="col-md-6">
-              <div class="radio">
-                <label>
-                  <input type="radio" name="picture" value="lake">
-                  <img src="img/water.jpg" alt="a picture of a lake">
-                </label>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="picture" value="field">
+                    <img src="img/field.jpg" alt="a picture of a field">
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="picture" value="lake">
+                    <img src="img/water.jpg" alt="a picture of a lake">
+                  </label>
+                </div>
               </div>
             </div>
           </div>
+
           <hr>
           <div class="center">
             <button class="btn btn-primary" type="submit">We recommend you enroll in the...</button>
@@ -183,7 +194,7 @@
 
         <div class ="results" id="noCode">
           <p>*It seems that you do not enjoy learning new things. If you still want to learn how to program we suggest you try a free introductory class first to make sure you will enjoy programming before signing up for one of our tracks.</p>
-        </div>        
+        </div>
 
         <h4 id="error">An unexpected error has occured, please make the website creator aware.</h4>
         <hr>
