@@ -2,7 +2,7 @@ body {
   background-color: lightgray;
 }
 
-button {
+#location button {
   margin: 0 275px 0 275px;
 }
 
@@ -31,10 +31,19 @@ img {
   width: 450px;
 }
 
+.center {
+  text-align: center;
+}
+
 .results {
   display: none;
 }
 
 #notComplete {
   color: red;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
 }
