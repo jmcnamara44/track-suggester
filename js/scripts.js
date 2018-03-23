@@ -19,61 +19,64 @@ $(document).ready(function() {
   $("#trackChooser").submit(function(event) {
     event.preventDefault();
     var nameInput = $("#name").val();
-    var picture = $("input:radio[name=picture]:checked").val();
+    var language = $("input:radio[name=language]:checked").val();
+    var siteLayout = $("#layout").val();
     var subject = $("#schoolSubject").val();
+    var picture = $("input:radio[name=picture]:checked").val();
 
     $(".name").text(nameInput);
-    
-    if (nameInput) {
 
-      $(".error").hide();
-
-      if (subject === "6") {
-
-
-        if (picture === "lake") {
-          $(".results").hide();
-          $("#ruby").show();
-          $("#noCode").show();
-        } else if (picture === "mountain"){
-          $(".results").hide();
-          $("#cSharp").show();
-          $("#noCode").show();
-        } else if (picture === "bridge"){
-          $(".results").hide();
-          $("#java").show();
-          $("#noCode").show();
-        } else  if (picture === "field"){
-          $(".results").hide();
-          $("#css").show();
-          $("#noCode").show();
-        } else {
-          $("#notComplete").show();
-        }
-
-      } else {
-
-
-        if (picture === "lake") {
-          $(".results").hide();
-          $("#ruby").show();
-        } else if (picture === "mountain"){
-          $(".results").hide();
-          $("#cSharp").show();
-        } else if (picture === "bridge"){
-          $(".results").hide();
-          $("#java").show();
-        } else  if (picture === "field"){
-          $(".results").hide();
-          $("#css").show();
-        } else {
-          $("#notComplete").show();
-        }
-      }
+    if (nameInput && language && siteLayout && subject && picture) {
+      alert("good job");
+      //
+      // $(".error").hide();
+      //
+      // if (subject === "6") {
+      //
+      //
+      //   if (picture === "lake") {
+      //     $(".results").hide();
+      //     $("#ruby").show();
+      //     $("#noCode").show();
+      //   } else if (picture === "mountain"){
+      //     $(".results").hide();
+      //     $("#cSharp").show();
+      //     $("#noCode").show();
+      //   } else if (picture === "bridge"){
+      //     $(".results").hide();
+      //     $("#java").show();
+      //     $("#noCode").show();
+      //   } else  if (picture === "field"){
+      //     $(".results").hide();
+      //     $("#css").show();
+      //     $("#noCode").show();
+      //   } else {
+      //     $("#error").show();
+      //   }
+      //
+      // } else {
+      //
+      //
+      //   if (picture === "lake") {
+      //     $(".results").hide();
+      //     $("#ruby").show();
+      //   } else if (picture === "mountain"){
+      //     $(".results").hide();
+      //     $("#cSharp").show();
+      //   } else if (picture === "bridge"){
+      //     $(".results").hide();
+      //     $("#java").show();
+      //   } else  if (picture === "field"){
+      //     $(".results").hide();
+      //     $("#css").show();
+      //   } else {
+      //     $("#error").show();
+      //   }
+      // }
 
     } else {
-      $(".error").show();
       $(".results").hide();
+      $("#notComplete").show();
     }
   });
 });

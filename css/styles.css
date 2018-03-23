@@ -21,10 +21,6 @@ h1 {
 .seattle {
   display: none;
 }
-.error {
-  display: none;
-  color: red;
-}
 
 img {
   height: 300px;
@@ -46,6 +42,11 @@ img {
 #notComplete {
   color: red;
   text-align: center;
+}
+
+#error {
+  display: none;
+  color: red;
 }
 
 footer {
