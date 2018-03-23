@@ -2,6 +2,25 @@ body {
   background-color: lightgray;
 }
 
+button {
+  margin: 0 275px 0 275px;
+}
+
+.epicodus {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.portland {
+  display: none;
+}
+
+.seattle {
+  display: none;
+}
 .error {
   display: none;
   color: red;
