@@ -1,5 +1,13 @@
 $(document).ready(function() {
   $("#trackChooser").submit(function(event) {
-    alert("submit button works!");
+    event.preventDefault();
+    var nameInput = $("#name").val();
+
+
+    if (nameInput) {
+
+    } else {
+      $(".error").show();
+    }
   });
 });
